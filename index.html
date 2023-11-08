@@ -119,8 +119,8 @@
                             <p class="member-descript">Product Designer</p>
                             <ul class="team-members-icons ">
                                 <li class="team-members-list-point">
-                                    <a class="team-members-links button-transition" href=""><svg class="team-members-svg" width="16"
-                                            height="16">
+                                    <a class="team-members-links button-transition" href=""><svg
+                                            class="team-members-svg" width="16" height="16">
                                             <use href="./images/icons.svg#icon-instagram-2"></use>
                                         </svg></a>
                                 </li>
@@ -347,16 +347,66 @@
                             <use class="footer-subscribe-send-svg" href="./images/icons.svg#icon-Frame-3"></use>
                         </svg>
                     </button>
-        </div>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="modal-div is-hidden" data-modal>
-        <div class="modal-window-div">
+        <div class="modal-window-div modal-window-div-container">
             <button class="modal-close-button" type="button" data-modal-close>
                 <svg class="modal-svg" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <p class="modal-paragraph">Leave your contacts and we will call you back</p>
+            <form>
+                <div class="modal-form-div">
+                    <label class="user-name-label" for="user-name">Name</label>
+                    <div class="user-name-div">
+                        <input id="user-name" name="user-name" type="text" class="user-name-input" required>
+                        <svg width="18" height="24" class="user-name-svg modal-use-svg-size">
+                            <use class="modal-use" href="./images/icons.svg#icon-human"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-div">
+                    <label class="user-name-label" for="user-phone">Phone</label>
+                    <div class="user-name-div">
+                        <input id="user-phone" name="user-phone" type="number" class="user-name-input" required>
+                        <svg width="18" height="24" class="user-name-svg modal-use-svg-size">
+                            <use class="modal-use" href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-div">
+                    <label class="user-name-label" for="user-email">Email</label>
+                    <div class="user-name-div">
+                        <input id="user-email" name="user-email" type="email" class="user-name-input" required>
+                        <svg width="18" height="24" class="user-name-svg modal-use-svg-size">
+                            <use class="modal-use" href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-div modal-comment-div">
+                    <label class="user-name-label" for="user-comment">Comment</label>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input"
+                        class="modal-textarea"></textarea>
+                </div>
+                <div class="modal-terms-div">
+                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy"
+                        class="terms visually-hidden" required />
+                    <label for="user-privacy" class="modal-terms-label">
+                        <span class="modal-terms-span">
+                            <svg width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="modal-link-terms">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-send-button">Send</button>
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
