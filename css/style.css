@@ -896,7 +896,7 @@ ol {
 }
 
 .modal-link-terms {
-	color: var(--link-hvr);
+	color: var(--brand-color);
 }
 
 .modal-terms-svg {
